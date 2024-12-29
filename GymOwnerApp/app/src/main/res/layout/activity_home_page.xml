@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:background="@drawable/homepagebg"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:columnCount="2"
+        android:fadeScrollbars="true"
+        android:rowCount="2"
+        android:scrollbars="horizontal"
+        app:fastScrollEnabled="false">
+
+        <ImageView
+            android:id="@+id/homeregisterbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@drawable/homeregister"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/homeprofilebtn"
+            android:layout_width="169dp"
+            android:layout_height="180dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@drawable/homeprofile" />
+
+        <ImageView
+            android:id="@+id/homeattendancerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="163dp"
+            android:background="@drawable/homeattendance"
+            android:paddingLeft="40dp" />
+
+        <ImageView
+            android:id="@+id/homegymplanbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homegymplan" />
+
+        <ImageView
+            android:id="@+id/homeusergrapgbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homeusergraph"
+            android:paddingLeft="40dp" />
+
+        <ImageView
+            android:id="@+id/homepaymentbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homepaybutton" />
+
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/homeequipbtn"
+            android:layout_height="wrap_content"
+            android:text="Equipments"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/baseline_miscellaneous_services_24"
+            android:background="@drawable/google_log"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/homelogoutbtn"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/baseline_logout_24"
+            android:background="@drawable/google_log"/>
+
+    </LinearLayout>
+
+</LinearLayout>

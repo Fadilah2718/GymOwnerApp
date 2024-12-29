@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/paymentcard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/recpayImage"
+            android:layout_width="63dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_person_24" />
+
+        <TextView
+            android:id="@+id/recpayUser"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/recpayImage"
+            android:text="Username"
+            android:textColor="@color/lavender"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/recpayphno"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recpayUser"
+            android:layout_toEndOf="@id/recpayImage"
+            android:layout_marginStart="20dp"
+            android:maxLines="1"
+            android:text="Phone No."
+            android:textColor="@color/lavender"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/recpayregisdate"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recpayphno"
+            android:layout_toEndOf="@id/recpayImage"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:text="Registered Date"
+            android:textColor="@color/lavender"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/hah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recpayregisdate"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="50dp"
+            android:hint="Payment Due In"
+            android:paddingTop="2dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/NoOfDaysLEft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recpayregisdate"
+            android:layout_toEndOf="@id/hah"
+            android:hint="No."
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/justdays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recpayregisdate"
+            android:layout_toEndOf="@id/NoOfDaysLEft"
+            android:paddingLeft="5dp"
+            android:text="Days"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hah"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/paid_button_card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Paid the Due"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/leaving_button_card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Leaving"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
